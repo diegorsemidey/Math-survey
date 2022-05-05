@@ -1,0 +1,75 @@
+<html>
+  <div id= "container">
+  <header>
+    <h1 id="title">Diego's Math Class Survey</h1>
+    <p id="description">Thank you for taking the time to help me improve my teaching system</p>
+  </header>
+  <form id="survey-form">
+    <div id="form-group">
+      <label for="name" id="name-label">Name: </label>
+      <input id="name" name="name" type="text" class="form-control" placeholder="Enter Your Name" required>
+    </div>
+  <div id="form-group">
+      <label for="last-name" id="last-name-label">Last Name: </label>
+      <input id="last-name" name="last-name" type="text" class="form-control" placeholder="Enter Your Last Name" required>
+  </div>
+  <div id="form-group">
+      <label for="email" id="email-label">Email: </label>
+      <input id="email" name="email" type="email" class="form-control" placeholder="Enter Your Email" required>
+  </div>
+  <div id="form-group">
+      <label for="number" id="number-label">Age: </label>
+      <input id="number" name="number" type="number" class="form-control" placeholder="Enter Your Age" min=10 max=99 required>
+  </div>
+   <div id="form-group">
+     <p>Which option decribes your current role?</p>
+     <select id="dropdown" name="role" class="form-control">
+       <option disabled selected value>Enter your role</option>
+       <option value="Student">Student</option>
+       <option value="Full time job">Full time job</option>
+       <option value="Full time learner">Full time learner</option>
+       <option value="Prefer not to say">Prefer not to say</option>
+       <option value="Other">Other</option>
+     </select>
+   </div>
+   <div id="form-group">
+     <fieldset>
+       <legend>Rate my service</legend>
+       <ul id="rate-list">
+       <li><label for="very" id="rate-label"><input class="input-radio" id="very" name="rate" value="very-good" type="radio"> Very Good</label></li>
+       <li><label for="good" id="rate-label"><input class="input-radio" id="good" name="rate" value="good" type="radio"> Good</label></li>
+       <li><label for="neutral" id="rate-label"><input class="input-radio" id="neutral" name="rate" value="neutral" type="radio"> Neutral</label></li>
+       <li><label for="bad" id="rate-label"><input class="input-radio" id="bad" name="rate" value="vbad" type="radio"> Bad</label></li>
+       <li><label for="very bad" id="rate-label"><input class="input-radio" id="very bad" name="rate" value="very bad" type="radio"> Very Bad</label></li>
+     </ul>
+     </fieldset>     
+   </div>
+     <div id="form-group">
+     <fieldset>
+       <legend>What new subject would you like me to add?</legend>
+       <ul id="subject">
+       <li><label for="advanced chemistry" id="subject-label"><input id="advanced chemistry" name="subject" value="advanced chemistry" type="checkbox" class="input-checkbox"> Advanced chemistry</label></li>
+       <li><label for="Advanced Phisics" id="subject-label"><input class="input-checkbox" id="Advanced Phisics" name="subject" value="Advanced Phisics" type="checkbox"> Advanced Phisics</label></li>
+       <li><label for="Geometry" id="subject-label"><input class="input-checkbox" id="Geometry" name="subject" value="Geometry" type="checkbox"> Geomery</label></li>
+       <li><label for="Organic Chemistry" id="subject-label"><input class="input-checkbox" id="Organic Chemistry" name="subject" value="Geometry" type="checkbox"> Organic Chemistry</label></li>
+       
+     </ul>
+     </fieldset>     
+   </div>
+    <div id="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div id="form-group">
+      <button type="submit" id="submit" class="submit-button">ENVIAR</button>
+    </div>
+    
+    
+  </form>
+  </div>
+</html>
